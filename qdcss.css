@@ -1,0 +1,694 @@
+@charset "utf-8";
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "微软雅黑";
+}
+a {
+  text-decoration: none;
+}
+ul, li {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+/*top*/
+.top {
+  width: 100%;
+  height: 40px;
+  background: #006098;
+}
+.top .en {
+  float: left;
+  margin-left: 150px;
+  line-height: 40px;
+}
+.top .en a {
+  color: white;
+  font-family: cambria, "Hoefler Text";
+	text-decoration: none;
+}
+.top .topnav {
+  float: right;
+  margin-right: 50px;
+}
+.top .topnav li {
+  float: left;
+  width: 60px;
+  border-left: 1px solid white;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.top .topnav li a {
+  color: white;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.top .en a:hover {
+  color: #f1d8ae;
+}
+.top .topnav li:hover a {
+  color: red;
+}
+.top .topnav li:hover {
+  background: #f1d8ae;
+}
+/*header*/
+header {
+  width: 100%;
+  height: auto;
+  min-width: 1400px;
+  min-height: 450px;
+  position: relative;
+	margin-top: 15px;
+}
+header .headerlunbo {
+  width: 100%;
+  height: 100%;
+}
+.headerlunbo img {
+  width: 100%;
+  height: 100%;
+}
+.nav1 {
+  background: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+}
+.nav1 .logo {
+  float: left;
+  margin: 15px 150px;
+}
+.nav1 .navlist {
+  float: right;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+.nav1 .navlist .firstmenu {
+  float: left;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.nav1 .navlist .firstmenu > a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.nav1 .navlist .firstmenu > a:hover {
+  color: yellow;
+  transition: all 0.5s ease;
+}
+.firstmenu .navlist {
+  position: absolute;
+}
+.firstmenu .dropdown-menu {
+  top: -10px;
+  display: none;
+  position: relative;
+  width: 100px;
+  height: auto;
+  left: -30px;
+}
+.nav1 .navlist .firstmenu:hover > .dropdown-menu {
+  display: block;
+  width: 100px;
+}
+.navlist .firstmenu .dropdown-menu li {
+  background: white;
+  border: 0.5px solid #3c93d8;
+  width: 160px;
+  line-height: 40px;
+  font-size: 15px;
+  padding-left: 0px;
+  text-align: center;
+}
+.navlist .firstmenu .dropdown-menu li a {
+  color: black;
+  text-decoration: none;
+}
+.firstmenu .dropdown-menu li:hover > a {
+  color: white;
+}
+.navlist .firstmenu .dropdown-menu li:hover {
+  background: #3d96d8;
+}
+/*s1*/
+.s1, .s2 {
+  width: 1400px;
+  height: 500px;
+  margin: 5px auto;
+}
+.s1 .news {
+  width: 900px;
+  height: 500px;
+  float: left;
+}
+.s1 .xueshu {
+  width: 450px;
+  height: 500px;
+  float: right;
+}
+/*top*/
+.newstop {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  border-bottom: 1px solid #121592;
+}
+.newstop img {
+  display: block;
+  float: left;
+  margin: 10px;
+}
+.newstop span {
+  display: block;
+  float: left;
+  line-height: 60px;
+}
+.newstop .xw {
+  font-size: 24px;
+  margin-right: 20px;
+}
+.newstop .xw2 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+.newstop .more {
+  float: right;
+  font-size: 16px;
+  margin-right: 50px;
+}
+.s1 .news .newpic {
+  width: 440px;
+  height: 400px;
+  float: left;
+}
+.news .newpic a:first-child:hover ~ .pic {
+  left: 0px;
+}
+.news .newpic a:nth-child(2):hover ~ .pic {
+  left: -440px;
+}
+.news .newpic a:nth-child(3):hover ~ .pic {
+  left: -880px;
+}
+.news .newpic a:nth-child(4):hover ~ .pic {
+  left: -1320px;
+}
+.news .newpic a:nth-child(5):hover ~ .pic {
+  left: -1760px;
+}
+.news .newpic a {
+  color: black;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  z-index: 100;
+  position: absolute;
+  top: 280px;
+  left: 200px;
+  text-align: center;
+}
+.news .newpic a:nth-child(1) {
+  left: 200px;
+}
+.news .newpic a:nth-child(2) {
+  left: 230px;
+}
+.news .newpic a:nth-child(3) {
+  left: 260px;
+}
+.news .newpic a:nth-child(4) {
+  left: 290px;
+}
+.news .newpic a:nth-child(5) {
+  left: 320px;
+}
+.news .newpic {
+  width: 440px;
+  height: 400px;
+  position: absolute;
+  overflow: hidden;
+}
+.news .newpic .pic {
+  width: 2200px;
+  height: 400px;
+  position: absolute;
+  left: 0px;
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+.pic .pic1 {
+  width: 400px;
+  float: left;
+  height: 400px;
+  margin: 20px;
+}
+.pic .pic1 img {
+  width: 400px;
+  height: 250px;
+  text-align: center;
+}
+.s1 .news .newlist {
+  width: 440px;
+  height: 400px;
+  float: right;
+}
+.newlist .newslist1 li {
+  width: 400px;
+  margin-left: 20px;
+  height: 40px;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.90);
+  white-space: nowrap;
+  test-overflow: ellipsis;
+  overflow: hidden;
+}
+.newlist .newslist1 li a {
+  color: black;
+  list-style-position: inside;
+  text-align: center;
+  text-decoration: none;
+}
+.newlist .newslist1 li:hover a {
+  color: #336699;
+}
+.topbottom {
+  width: 100px;
+  height: 6px;
+  background: #065287;
+  position: relative;
+  top: -3px;
+}
+/*s2*/
+/*新篇章*/
+.s2 .mubiao {
+  width: 440px;
+  height: 500px;
+  /*background:#A9D863;*/
+  float: left;
+  margin: 0px 13px;
+}
+.sy-xsyg {
+  width: 470px;
+  padding-right: 30px;
+  float: left;
+}
+.sy-xsyg-list {
+  margin-top: 0px;
+}
+.sy-xsyg-list li {
+  width: 100%;
+  height: 84px;
+  padding: 5px 10px;
+  position: relative;
+}
+.sy-xsyg-list a:nth-child(odd) li {
+  background: #ededed;
+}
+.sy-xsyg-list a:nth-child(even) li {
+  background: #ffffff;
+}
+.sy-xsyg-list li .left {
+  width: 45px;
+  float: left;
+  text-align: right;
+  position: absolute;
+}
+.sy-xsyg-list li .left .en {
+  font-size: 14px;
+  color: #336699;
+  padding-bottom: 0px;
+}
+.sy-xsyg-list li .left .num {
+  font-size: 24px;
+  color: #336699;
+  display: inline-block;
+  border-bottom: 4px solid #336699;
+  position: relative;
+  top: -5px;
+}
+.sy-xsyg-list li .right {
+  position: absolute;
+  float: left;
+  width: 335px;
+  left: 90px;
+  top: 10px;
+}
+.sy-xsyg-list li .right .p1 {
+  font-size: 16px;
+  color: #464646;
+  padding-bottom: 0px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sy-xsyg-list li:hover .right .p1 {
+  color: #336699;
+}
+.sy-xsyg-list li .right .p2 {
+  font-size: 14px;
+  color: #848484;
+  padding-bottom: 10px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*综合新闻*/
+.newcon-left1 .bd .tempWrap li {
+  text-align: center;
+}
+.mubiaolist .zhlist {
+  width: 440px;
+  height: 400px;
+  float: right;
+}
+.mubiaolist .zhlist li {
+  width: 400px;
+  margin-left: 20px;
+  height: 43px;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.90);
+  white-space: nowrap;
+  test-overflow: ellipsis;
+  overflow: hidden;
+}
+.mubiaolist .zhlist a {
+  color: black;
+  list-style-position: inside;
+  text-decoration: none;
+}
+.mubiaolist .zhlist li:hover a {
+  color: #336699;
+}
+.s2 .yuanxi {
+  width: 935px;
+  height: 500px;
+  background: #C0C438;
+  float: right;
+}
+.s2 .yuanxi .yuanxitop {
+  width: 100%;
+  height: 60px;
+  background: #FDF8F8;
+}
+.s2 .yuanxi .yxlist {
+  width: 440px;
+  height: 400px;
+  float: left;
+  background: #E7E9CB;
+  margin: 10px;
+}
+/*s3 活力青大*/
+.s3 {
+  width: 100%;
+  /*min-width: 1400px;*/
+  height: 400px;
+  margin: auto;
+  background: url(../image/qhbg1.jpg);
+}
+.s3 .hlqd {
+  width: 1200px;
+  margin: 0px auto;
+  height: 400px;
+  /*background: #E454A5;*/
+}
+.rencaibox {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 30px 0;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+}
+.rencaicon {
+  width: 1200px;
+  overflow: hidden;
+  height: 400px;
+}
+input {
+  width: 155px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+.rencaibox span {
+  display: inline-block;
+  width: 155px;
+  height: 50px;
+  background: url("../image/qh-h.png") no-repeat left bottom;
+}
+.rencaibox span b {
+  display: block;
+  height: 57px;
+  text-align: center;
+  line-height: 57px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+}
+.rencaibox input:nth-of-type(1):checked ~ span:nth-of-type(1) {
+  background: url("../image/qh-r.png") no-repeat left bottom;
+}
+.rencaibox input:nth-of-type(2):checked ~ span:nth-of-type(2) {
+  background: url("../image/qh-r.png") no-repeat left bottom;
+}
+.rencaibox input:nth-of-type(3):checked ~ span:nth-of-type(3) {
+  background: url("../image/qh-r.png") no-repeat left bottom;
+}
+.rencaibox input:nth-of-type(4):checked ~ span:nth-of-type(4) {
+  background: url("../image/qh-r.png") no-repeat left bottom;
+}
+.rencaibox input:nth-of-type(1):checked ~ .rencaicon .rencailist {}
+.rencaibox input:nth-of-type(2):checked ~ .rencaicon .rencailist {
+  transform: translateY(-100%);
+}
+.rencaibox input:nth-of-type(3):checked ~ .rencaicon .rencailist {
+  transform: translateY(-200%);
+}
+.rencaibox input:nth-of-type(4):checked ~ .rencaicon .rencailist {
+  transform: translateY(-300%);
+}
+.rencailist .qiebox1 .hl {
+  float: left;
+  margin: 10px 50px;
+  height: 300px;
+  overflow: hidden;
+}
+.rencaicon .rencailist .qiebox1 .hl a img {
+  display: block;
+  width: 300px;
+  height: 200px;
+  transition: all 1s;
+}
+.rencailist .qiebox1 .hl a:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.rencailist .qiebox1 .hl a {
+  display: block;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+.rencailist .qiebox1 .hl span {
+  display: block;
+  height: 40px;
+  width: 300px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  top: 200px;
+}
+
+.rencailist .qiebox11{
+	margin: 0px 110px;
+}
+.rencailist .qiebox11 .xb {
+  float: left;
+  margin: 10px 20px;
+  height: 300px;
+  overflow: hidden;
+}
+.rencailist .qiebox11 .xb a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.rencaicon .rencailist .qiebox11 .xb a img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  transition: all 1s;
+}
+.rencailist .qiebox11 .xb a:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.rencailist .qiebox11 .xb span {
+  display: block;
+  height: 40px;
+  width: 200px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  top: 200px;
+}
+
+/*媒体青大*/
+.qiebox111 .mt .mtlist{
+	margin-left: 50px;
+	padding-top: 20px;
+}
+.qiebox111 .mt .mtlist li{
+	width: 500px;
+	height: 70px;
+	float: left;
+	margin: 0px 30px;
+	transition: all 0.5s;
+	margin-bottom: 20px;
+}
+.qiebox111 .mt .mtlist li .en{
+	float: left;
+}
+.qiebox111 .mt .mtlist li .p1{
+	padding-top: 20px;
+	text-align-last: left;
+	color: rgba(0,0,0,1.00);
+	text-decoration: none;
+}
+.qiebox111 .mt .mtlist li:hover{
+	transform: scale(1.05);
+	 box-shadow: 4px 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.rencailist .qiebox1111{
+	padding-left: 100px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.rencailist .qiebox1111 .rw .l1{
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+.rencailist .qiebox1111 .rw .l2{
+	float: left;
+	position: relative;
+}
+
+.rencailist .qiebox1111 .rw .l2 .rwpic{
+	vertical-align: middle;
+	width: 280px;
+	height: 140px;
+	overflow: hidden;
+}
+.rencailist .qiebox1111 .rw .l2 i{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 45%;
+	top: 33%;
+	opacity: 0.45;
+	background: url("../image/bf.png");
+}
+.rencailist .qiebox1111 .rw .l1 i{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	opacity: 0.45;
+	background: url("../image/bf.png");
+}
+.rencailist .qiebox1111 .rw .l1:hover i{
+	opacity: 1;
+}
+.rencailist .qiebox1111 .rw .l2:hover i{
+	opacity: 1;
+}
+.qiebox1111 .rw .txtk h5{
+	margin-top: -50px;
+	font-size: 20px;
+	color:rgba(255,255,255,1.00);
+	text-align: left;
+	padding-left: 30px;
+	text-decoration: none;
+}
+.rencailist .qiebox1111 .rw .l2 p{
+	margin-top: -40px;
+	font-size: 15px;
+	color:rgba(255,255,255,1.00);
+	text-align: left;
+	padding-left: 15px;
+	text-decoration: none;
+}
+
+.ft {
+  width: 100%;
+  min-width: 1400px;
+  height: 400px;
+  background-image: url(../image/footbg1.jpg);
+}
+.ft .ftleft{
+	color: rgba(255,255,255,1.00);
+	padding-top: 100px;
+	padding-left: 170px;
+	line-height: 30px;
+}
+.ft .ftcenter{
+	margin: -150px 600px;
+}
+.ft .ftright{
+	float: right;
+	margin-top: 50px;
+	color: rgba(255,255,255,1.00);
+	
+}
+.ft .ftright .gz{
+	margin-right: 400px;
+	text-align: center;
+}
+.ft .ftright .wb{
+	padding-left: 120px;
+	margin-top: -124px;
+
+}
+.ft .ftright .dy{
+	padding-left: 240px;
+	margin-top: -124px;
+
+}
+.ft .ftright .sp{
+	padding-left: 360px;
+	margin-top: -124px;
+}
+.ft .ftbottom{
+	width: 100%;
+	height: 50px;
+	background: rgba(0,61,155,1.00);
+	margin-top: 300px;
+}
+.ft .ftbottom .content .fl{
+	float: left;
+	margin-left: 200px;
+	color: rgb(153, 204, 255); 
+	line-height: 50px; font-size: 14px;
+}
+.ft .ftbottom .content .ba{
+	float: right;
+	margin-right: 100px;
+	color: rgb(153, 204, 255); 
+	line-height: 50px; font-size: 14px;
+}
